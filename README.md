@@ -1,7 +1,8 @@
 # > I make stupid shit biology wise that will not contribute to anything in life but they're cool i guess.
 
 
-Welcome to my central repository index. This space serves as a directory for my ongoing projects, research proposals, and technical implementations in synthetic biology, material sciences, and software engineering.
+welcome to my github place where if boredom gets to my head too much my biology brain activated and makes the craziest shit ever
+its weirdly scientific and well made, have fun
 
 ---
 
@@ -10,7 +11,7 @@ Welcome to my central repository index. This space serves as a directory for my 
 ### 1. [Project Titan-Mycelium](https://pinterittejeden-gif.github.io/titan-mycelium/)
 * **Focus:** Engineered Fungal Matrices for Autonomous Structural Repair and Vector Defense
 * **Core Concepts:** Filamentous Macro-Cord Networks, Chitosan Shielding, Metabolic Efficiency ROI, and Reproductive Genetic Containment.
-* **Status:** Live Proposals & Visual Assets Deployed.
+* **Status:** Pretty much done.
 
 ---
 
@@ -19,4 +20,4 @@ Welcome to my central repository index. This space serves as a directory for my 
 * **Automation & Simulation:** Scripted modeling of biological feedback loops.
 
 ---
-*Maintained by Pinteritte. All project assets, documentation, and live pages are updated dynamically.*
+*Maintained by Pinteritte (me) i may use AI for my images if i dont find anything good, but i would never use AI for the text itself <3.*
