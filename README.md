@@ -17,6 +17,7 @@ its weirdly scientific and well made, have fun
 ## About These Projects
 The projects presented in this portfolio are **conceptual research proposals** and **speculative engineering designs** created to explore ideas in biotechnology, synthetic biology, and biomaterials.
 They are __not__ experimental studies, have __not__ been physically implemented or tested by me, and should __not__ be interpreted as validated scientific results. Performance descriptions, diagrams, and figures are intended to illustrate proposed concepts rather than report measured data.
+
 ---
 
 ## 🛠️ Technical Domains
