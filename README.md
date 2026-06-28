@@ -1,8 +1,9 @@
 # I make stupid shit biology wise that will not contribute to anything in life but they're cool i guess.
 
-welcome to my github place where if boredom gets to my head too much  
-i start making the craziest shit ever  
-its weirdly scientific and well made, have fun
+helloooooo welcome to my space!
+you can call me Pinteritte, im 15 and living in Poland
+all of the projects below are made to make them as scientific and as correct as humanly possible
+any well constructed criticism and/or feedback will be gladly accepted, you can contact me by pinging me (@vxef) on biocord, or DMing me. Times for response may vary.
 
 ---
 
