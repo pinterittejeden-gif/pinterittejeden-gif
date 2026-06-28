@@ -1,9 +1,9 @@
 # I make stupid shit biology wise that will not contribute to anything in life but they're cool i guess.
 
-helloooooo welcome to my space!  
-you can call me Pinteritte, im 15 and living in Poland  
-all of the projects below are made to make them as scientific and as correct as humanly possible  
-any well constructed criticism and/or feedback will be gladly accepted, you can contact me by pinging me (@vxef) on biocord, or DMing me. Times for response may vary.
+helloooooo welcome to my space!
+you can call me Pinteritte. im 15 and i live in Poland
+all of the projects below are made with the goal of being as scientific and accurate as possible
+well constructed criticism and feedback are always welcome. you can contact me by pinging me @vxef on Biocord or by DMing me. response times may vary
 
 ---
 
