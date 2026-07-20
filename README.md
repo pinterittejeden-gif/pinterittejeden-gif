@@ -22,13 +22,18 @@ well constructed criticism and feedback are always welcome. you can contact me b
 ### 3. [Project Coral-Suture](https://pinterittejeden-gif.github.io/coral-suture/)
 * **Focus:** Engineered Recruitment Scaffolds for Reef Restoration
 * **Core Concepts:** Reef-safe scaffold architecture, coral larval settlement cues, microhabitat stabilization, modular nursery deployment, and long-term ecological monitoring.
-* **Status:** In progress.
+* **Status:** Done.
+
+### 4. [Project BioLume Sentinel](https://github.com/pinterittejeden-gif/Project-BioLume-Sentinel)
+* **Focus:** Living Plant Biosensors for Soil Contamination
+* **Core Concepts:** Pollutant-responsive promoter systems, bioluminescent reporter output, root-zone sensing, false-positive control, optical readout calibration, and contained phytosensor deployment.
+* **Status:** Done.
 
 ---
 
 ## About These Projects
 
-The projects presented in this portfolio are **conceptual research proposals** and **speculative engineering designs** created to explore ideas in biotechnology, synthetic biology, biomaterials, environmental design, and ecological restoration.
+The projects presented in this portfolio are **conceptual research proposals** and **speculative engineering designs** created to explore ideas in biotechnology, synthetic biology, biomaterials, environmental design, ecological restoration, and environmental monitoring.
 
 They are **not** experimental studies, have **not** been physically implemented or tested by me, and should **not** be interpreted as validated scientific results. Performance descriptions, diagrams, images, and figures are intended to illustrate proposed concepts rather than report measured data.
 
@@ -37,8 +42,9 @@ They are **not** experimental studies, have **not** been physically implemented 
 ## 🛠️ Technical Domains
 
 * **Synthetic Biology & Biomaterials:** Genetic pathway modifications, engineered living materials, metabolic design, and biological containment concepts.
-* **Environmental Biotechnology:** Phytoremediation, metal sequestration, soil-to-plant transport systems, and biological remediation mechanics.
+* **Environmental Biotechnology:** Phytoremediation, metal sequestration, soil-to-plant transport systems, biological remediation mechanics, and contamination sensing.
 * **Marine Restoration & Ecology:** Coral recruitment, reef-safe scaffold design, larval settlement support, and ecological monitoring.
+* **Plant Biosensors & Environmental Monitoring:** Reporter plants, root-zone sensing, bioluminescent outputs, optical readout systems, and contamination mapping.
 * **Material Science:** Mycelium composites, biomineralized timber, reef-compatible scaffolds, structural reinforcement concepts, and degradation resistance.
 * **Automation & Simulation:** Scripted modeling of biological feedback loops and hypothetical response pathways.
 
