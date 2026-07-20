@@ -1,21 +1,22 @@
 :root {
   color-scheme: light;
-  --ink: #11251f;
-  --ink-soft: #465d55;
-  --paper: #f5f2e9;
-  --paper-bright: #fffdf7;
-  --forest: #0a3329;
-  --forest-deep: #071a16;
-  --mint: #9ee6c8;
-  --lime: #d4ee91;
-  --line: #cbd5c7;
-  --coral: #ff8a73;
-  --blue: #78b9d4;
-  --copper: #cb8c55;
-  --violet: #a694d6;
-  --radius: 1.25rem;
-  --shadow: 0 1.5rem 4rem rgb(16 43 34 / 10%);
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --ink: #20362c;
+  --ink-soft: #4e6258;
+  --paper: #f3edda;
+  --paper-bright: #fffaf0;
+  --forest: #24513f;
+  --forest-deep: #17372c;
+  --mint: #a5dec2;
+  --lime: #d9ea89;
+  --line: #9da99a;
+  --coral: #f58c79;
+  --blue: #7fb7cf;
+  --copper: #ca8e59;
+  --violet: #a99bd1;
+  --yellow: #f4d66d;
+  --radius: .45rem;
+  --shadow: .45rem .45rem 0 rgb(32 54 44 / 16%);
+  font-family: "Trebuchet MS", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 * {
@@ -28,7 +29,9 @@ html {
 
 body {
   margin: 0;
-  background: var(--paper);
+  background-color: var(--paper);
+  background-image: radial-gradient(rgb(61 82 70 / 15%) .7px, transparent .7px);
+  background-size: 20px 20px;
   color: var(--ink);
   line-height: 1.65;
 }
@@ -69,16 +72,17 @@ button:focus-visible {
   width: min(1180px, calc(100% - 2rem));
   margin: 0 auto;
   padding: 1.4rem 0;
-  color: #e9f7ef;
+  color: var(--ink);
 }
 
 .brand {
   display: inline-flex;
   align-items: center;
   gap: .7rem;
-  font-size: .85rem;
-  font-weight: 800;
-  letter-spacing: .16em;
+  font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", monospace;
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: -.02em;
   text-decoration: none;
 }
 
@@ -87,18 +91,21 @@ button:focus-visible {
   width: 2rem;
   height: 2rem;
   place-items: center;
-  border: 1px solid rgb(255 255 255 / 36%);
-  border-radius: 50%;
-  color: var(--mint);
-  font-family: Georgia, serif;
+  border: 2px solid var(--ink);
+  border-radius: .2rem;
+  background: var(--lime);
+  color: var(--ink);
+  font-family: ui-monospace, "Cascadia Mono", monospace;
   font-size: 1.1rem;
+  transform: rotate(-4deg);
 }
 
 nav {
   display: flex;
   align-items: center;
   gap: 1.35rem;
-  font-size: .86rem;
+  font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", monospace;
+  font-size: .78rem;
 }
 
 nav a {
@@ -106,13 +113,19 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--mint);
+  color: var(--forest);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: .3rem;
 }
 
 .nav-github {
   padding: .55rem .9rem;
-  border: 1px solid rgb(255 255 255 / 30%);
-  border-radius: 999px;
+  border: 2px solid var(--ink);
+  border-radius: .25rem;
+  background: var(--yellow);
+  box-shadow: 3px 3px 0 var(--ink);
+  transform: rotate(1deg);
 }
 
 .hero {
@@ -125,18 +138,21 @@ nav a:hover {
   overflow: hidden;
   padding: 9rem max(1rem, calc((100% - 1180px) / 2)) 6rem;
   background:
-    radial-gradient(circle at 78% 38%, rgb(69 149 119 / 25%), transparent 24rem),
-    linear-gradient(135deg, var(--forest-deep), var(--forest));
-  color: #eef9f2;
+    linear-gradient(90deg, transparent 4.2rem, rgb(237 126 115 / 25%) 4.2rem, rgb(237 126 115 / 25%) 4.3rem, transparent 4.3rem),
+    repeating-linear-gradient(0deg, transparent, transparent 31px, rgb(70 112 91 / 10%) 31px, rgb(70 112 91 / 10%) 32px),
+    var(--paper);
+  color: var(--ink);
 }
 
 .hero::before {
   position: absolute;
-  inset: 0;
-  background-image: linear-gradient(rgb(255 255 255 / 3%) 1px, transparent 1px), linear-gradient(90deg, rgb(255 255 255 / 3%) 1px, transparent 1px);
-  background-size: 56px 56px;
-  content: "";
-  mask-image: linear-gradient(to bottom, black, transparent 90%);
+  right: max(1rem, calc((100% - 1180px) / 2));
+  bottom: 3rem;
+  color: rgb(32 54 44 / 52%);
+  content: "plants / fungi / reefs / probably too many diagrams";
+  font-family: ui-monospace, "Cascadia Mono", monospace;
+  font-size: .7rem;
+  transform: rotate(-2deg);
 }
 
 .hero-copy,
@@ -150,14 +166,19 @@ nav a:hover {
 .project-number {
   margin: 0 0 1rem;
   color: #27705b;
-  font-size: .75rem;
+  font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", monospace;
+  font-size: .72rem;
   font-weight: 800;
   letter-spacing: .14em;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 .hero .eyebrow {
-  color: var(--mint);
+  display: inline-block;
+  padding: .2rem .55rem;
+  background: var(--yellow);
+  color: var(--ink);
+  transform: rotate(-1deg);
 }
 
 h1,
@@ -171,21 +192,35 @@ h1 {
   max-width: 800px;
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(3.4rem, 7.4vw, 6.8rem);
+  font-size: clamp(3.15rem, 6.6vw, 6.15rem);
   font-weight: 500;
   letter-spacing: -.055em;
   line-height: .94;
 }
 
 h1 em {
-  color: var(--lime);
+  position: relative;
+  color: var(--forest);
   font-weight: 400;
+}
+
+h1 em::after {
+  position: absolute;
+  right: 0;
+  bottom: -.18rem;
+  left: 0;
+  height: .35rem;
+  background: var(--yellow);
+  content: "";
+  opacity: .75;
+  transform: rotate(-1deg);
+  z-index: -1;
 }
 
 .hero-lede {
   max-width: 690px;
   margin: 2rem 0 0;
-  color: #c8ded4;
+  color: var(--ink-soft);
   font-size: clamp(1rem, 1.7vw, 1.2rem);
 }
 
@@ -202,31 +237,36 @@ h1 em {
   justify-content: center;
   min-height: 3rem;
   padding: .75rem 1.15rem;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  font-size: .88rem;
+  border: 2px solid var(--ink);
+  border-radius: .25rem;
+  font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", monospace;
+  font-size: .8rem;
   font-weight: 750;
   text-decoration: none;
 }
 
 .button-primary {
-  border-color: var(--lime);
   background: var(--lime);
   color: var(--forest-deep);
+  box-shadow: 4px 4px 0 var(--ink);
+  transform: rotate(-.5deg);
 }
 
 .button-primary:hover {
-  background: #e2f6af;
+  background: #e5f39e;
+  transform: translate(2px, 2px) rotate(-.5deg);
+  box-shadow: 2px 2px 0 var(--ink);
 }
 
 .hero .button-secondary {
-  border-color: rgb(255 255 255 / 28%);
-  color: #eef9f2;
+  background: var(--paper-bright);
+  color: var(--ink);
+  transform: rotate(.7deg);
 }
 
 .hero .button-secondary:hover {
-  border-color: var(--mint);
-  color: var(--mint);
+  background: #fff;
+  color: var(--forest);
 }
 
 .hero-system {
@@ -235,13 +275,18 @@ h1 em {
   aspect-ratio: 1;
   place-items: center;
   justify-self: end;
+  border: 2px dashed var(--forest);
+  border-radius: 47% 53% 45% 55%;
+  background: rgb(255 250 240 / 68%);
+  box-shadow: .8rem .8rem 0 rgb(38 81 63 / 9%);
+  transform: rotate(2deg);
 }
 
 .system-orbit {
   position: absolute;
   width: 82%;
   height: 82%;
-  border: 1px solid rgb(158 230 200 / 36%);
+  border: 2px solid rgb(36 81 63 / 38%);
   border-radius: 47% 53% 58% 42%;
   transform: rotate(12deg);
 }
@@ -249,7 +294,7 @@ h1 em {
 .system-orbit::before,
 .system-orbit::after {
   position: absolute;
-  border: 1px solid rgb(158 230 200 / 18%);
+  border: 1px dashed rgb(36 81 63 / 28%);
   border-radius: 50%;
   content: "";
 }
@@ -268,32 +313,34 @@ h1 em {
   aspect-ratio: 1;
   place-items: center;
   align-content: center;
-  border: 1px solid rgb(255 255 255 / 28%);
-  border-radius: 50%;
-  background: rgb(4 31 25 / 76%);
-  box-shadow: 0 0 5rem rgb(98 210 164 / 18%);
-  color: var(--mint);
-  font-size: .8rem;
-  letter-spacing: .09em;
-  text-transform: uppercase;
+  border: 2px solid var(--ink);
+  border-radius: 48% 52% 46% 54%;
+  background: var(--lime);
+  box-shadow: 5px 5px 0 var(--ink);
+  color: var(--ink);
+  font-family: ui-monospace, "Cascadia Mono", monospace;
+  font-size: .72rem;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: lowercase;
 }
 
 .system-core strong {
-  color: #eef9f2;
+  color: var(--forest);
   font-size: 1.15rem;
-  transform: rotate(90deg);
 }
 
 .system-node {
   position: absolute;
   padding: .35rem .65rem;
-  border: 1px solid rgb(255 255 255 / 22%);
-  border-radius: 999px;
-  background: var(--forest-deep);
-  color: #bcd5ca;
-  font-size: .7rem;
-  letter-spacing: .08em;
-  text-transform: uppercase;
+  border: 1.5px solid var(--ink);
+  border-radius: .2rem;
+  background: var(--paper-bright);
+  color: var(--ink);
+  font-family: ui-monospace, "Cascadia Mono", monospace;
+  font-size: .66rem;
+  letter-spacing: 0;
+  text-transform: lowercase;
 }
 
 .node-a { left: 3%; top: 38%; }
@@ -308,16 +355,17 @@ h1 em {
   width: min(1180px, calc(100% - 2rem));
   margin: -2.4rem auto 0;
   padding: 2.1rem 2.4rem;
-  border: 1px solid #bed0c4;
+  border: 2px dashed var(--ink);
   border-radius: var(--radius);
-  background: var(--paper-bright);
+  background: #fff2ad;
   box-shadow: var(--shadow);
+  transform: rotate(-.45deg);
 }
 
 .notice h2 {
   margin: 0;
   font-family: Georgia, serif;
-  font-size: clamp(1.55rem, 3vw, 2.2rem);
+  font-size: clamp(1.5rem, 3vw, 2.05rem);
   font-weight: 500;
   line-height: 1.1;
 }
@@ -365,10 +413,21 @@ h1 em {
 
 .project-card {
   overflow: hidden;
-  border: 1px solid var(--line);
+  border: 2px solid var(--ink);
   border-radius: var(--radius);
   background: var(--paper-bright);
-  box-shadow: 0 .8rem 2.4rem rgb(16 43 34 / 5%);
+  box-shadow: var(--shadow);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.project-card:nth-child(1) { transform: rotate(-.25deg); }
+.project-card:nth-child(2) { transform: rotate(.35deg); }
+.project-card:nth-child(3) { transform: rotate(.2deg); }
+.project-card:nth-child(4) { transform: rotate(-.35deg); }
+
+.project-card:hover {
+  box-shadow: .7rem .7rem 0 rgb(32 54 44 / 19%);
+  transform: translateY(-.2rem) rotate(0);
 }
 
 .project-visual {
@@ -377,7 +436,7 @@ h1 em {
   min-height: 250px;
   place-items: center;
   overflow: hidden;
-  border-bottom: 1px solid rgb(17 37 31 / 14%);
+  border-bottom: 2px solid var(--ink);
 }
 
 .project-biolume .project-visual { background: #dcedcf; }
@@ -392,8 +451,8 @@ h1 em {
   width: 7rem;
   height: 7rem;
   place-items: center;
-  border: 1px solid rgb(17 37 31 / 28%);
-  border-radius: 50%;
+  border: 2px solid var(--ink);
+  border-radius: 44% 56% 47% 53%;
   background: rgb(255 255 255 / 38%);
   font-family: Georgia, serif;
   font-size: 3.2rem;
@@ -404,7 +463,8 @@ h1 em {
   bottom: 1rem;
   left: 1rem;
   padding: .35rem .6rem;
-  border-radius: 999px;
+  border: 1px solid var(--ink);
+  border-radius: .2rem;
   background: rgb(255 253 247 / 72%);
   font-size: .7rem;
   font-weight: 800;
@@ -456,7 +516,7 @@ h1 em {
 
 .project-boundary {
   margin: 1.4rem 0;
-  border-top: 1px solid var(--line);
+  border-top: 1px dashed var(--line);
 }
 
 .project-boundary div {
@@ -464,7 +524,7 @@ h1 em {
   grid-template-columns: 8rem 1fr;
   gap: .8rem;
   padding: .65rem 0;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px dashed var(--line);
   font-size: .8rem;
 }
 
@@ -493,7 +553,11 @@ h1 em {
   max-width: none;
   padding-right: max(1rem, calc((100% - 1180px) / 2));
   padding-left: max(1rem, calc((100% - 1180px) / 2));
-  background: var(--forest-deep);
+  border-top: 3px solid var(--ink);
+  border-bottom: 3px solid var(--ink);
+  background:
+    linear-gradient(rgb(255 255 255 / 2%), rgb(255 255 255 / 2%)),
+    var(--forest-deep);
   color: #eaf5ef;
 }
 
@@ -511,13 +575,13 @@ h1 em {
   padding: 0;
   grid-template-columns: repeat(4, 1fr);
   list-style: none;
-  border-top: 1px solid rgb(255 255 255 / 20%);
+  border-top: 1px dashed rgb(255 255 255 / 34%);
 }
 
 .method-grid li {
   min-height: 240px;
   padding: 1.5rem 1.2rem;
-  border-right: 1px solid rgb(255 255 255 / 20%);
+  border-right: 1px dashed rgb(255 255 255 / 30%);
 }
 
 .method-grid li:last-child {
@@ -562,6 +626,9 @@ h1 em {
   margin-top: 1rem;
   border-color: #58766b;
   color: var(--ink);
+  background: var(--yellow);
+  box-shadow: 4px 4px 0 var(--ink);
+  transform: rotate(.5deg);
 }
 
 footer {
@@ -569,6 +636,7 @@ footer {
   justify-content: space-between;
   gap: 2rem;
   padding: 2rem max(1rem, calc((100% - 1180px) / 2));
+  border-top: 2px dashed #789486;
   background: var(--forest-deep);
   color: #b8cec4;
   font-size: .8rem;
@@ -676,5 +744,10 @@ footer a {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  .project-card,
+  .button {
+    transition: none;
   }
 }
