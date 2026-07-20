@@ -1,33 +1,31 @@
-# BIOFOLIO
+# hey, i'm Pinteritte
 
-BIOFOLIO is Pinteritte's portfolio of conceptual research proposals spanning synthetic biology, biomaterials, ecological restoration, and environmental monitoring.
+i make weird biology ideas because they're fun to think through. mostly plants, fungi, biomaterials, and ecosystems—the kind of stuff where living systems run into engineering problems.
 
-**Portfolio:** [pinterittejeden-gif.github.io/pinterittejeden-gif](https://pinterittejeden-gif.github.io/pinterittejeden-gif/)
+i try to take every idea seriously enough to find out where it breaks.
 
-## Projects
+**my actual site:** [pinterittejeden-gif.github.io/pinterittejeden-gif](https://pinterittejeden-gif.github.io/pinterittejeden-gif/)
 
-| Project | Research question | Status |
-| --- | --- | --- |
-| [BioLume Sentinel](https://pinterittejeden-gif.github.io/Project-BioLume-Sentinel/) | Could a contained plant reporter help identify where confirmatory soil testing should happen? | Concept proposal |
-| [Coral-Suture](https://pinterittejeden-gif.github.io/coral-suture/) | Could a retrievable mineral scaffold improve coral larval settlement and early survival? | Concept proposal |
-| [Metallophyte-Armor](https://pinterittejeden-gif.github.io/metallophyte-armor/) | Could copper already present in contaminated soil be captured in monitored, harvestable timber? | Concept proposal |
-| [Titan-Mycelium](https://pinterittejeden-gif.github.io/titan-mycelium/) | Could a nutrient-dependent fungal matrix provide localized, non-structural repair? | Concept proposal |
+## things i'm overthinking
 
-## Evidence standard
+| project | the question that started it |
+| --- | --- |
+| [BioLume Sentinel](https://pinterittejeden-gif.github.io/Project-BioLume-Sentinel/) | could a plant glow when its roots encounter contaminated soil? |
+| [Coral-Suture](https://pinterittejeden-gif.github.io/coral-suture/) | could a removable scaffold give coral larvae a better place to start? |
+| [Metallophyte-Armor](https://pinterittejeden-gif.github.io/metallophyte-armor/) | could a pine move copper from bad soil into harvestable inner wood? |
+| [Titan-Mycelium](https://pinterittejeden-gif.github.io/titan-mycelium/) | could a limited fungal matrix wake up near damage, repair it, and stop? |
 
-Each proposal separates:
+## quick honesty check
 
-1. **Established basis** — mechanisms or practices supported by cited literature.
-2. **Proposed bridge** — the speculative engineering step connecting those mechanisms.
-3. **Critical unknowns** — the assumptions most likely to prevent the system from working.
-4. **Minimum proof** — measurable tests required before stronger claims would be justified.
+i haven't physically built or validated these projects. they're conceptual proposals built from published mechanisms, not experimental results or instructions.
 
-These projects are educational design studies. They have not been physically implemented or validated by the author and should not be read as experimental results, deployment instructions, or safety guidance.
+for each idea, i try to separate:
 
-## Feedback
+1. what the science already supports;
+2. the leap i'm making;
+3. what could kill the idea;
+4. what i'd test first.
 
-Constructive scientific and technical criticism is welcome through [GitHub issues](https://github.com/pinterittejeden-gif/pinterittejeden-gif/issues).
+if you find a broken assumption, a paper i missed, or a much simpler answer, [tell me](https://github.com/pinterittejeden-gif/pinterittejeden-gif/issues). well-constructed criticism is always welcome.
 
-## License
-
-The website code is available under the MIT License. Original written content and code-native diagrams are available under CC BY 4.0. See [LICENSE.md](LICENSE.md) for details.
+code is MIT licensed; original writing and diagrams are CC BY 4.0. the details are in [LICENSE.md](LICENSE.md).
