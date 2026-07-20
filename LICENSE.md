@@ -16,6 +16,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 Unless otherwise noted, original prose and original code-native diagrams are licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 
-Attribution may be given as: **Pinteritte, BIOFOLIO (2026)**, with a link to this repository.
+Attribution may be given as: **Pinteritte, biology project portfolio (2026)**, with a link to this repository.
 
 Academic papers, external websites, names, and other third-party works referenced by the portfolio remain the property of their respective owners and are not relicensed here.

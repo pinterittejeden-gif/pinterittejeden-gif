@@ -1,20 +1,21 @@
 :root {
   color-scheme: light;
-  --ink: #15231e;
-  --muted: #53665f;
-  --paper: #f6f4ec;
-  --surface: #fffdf8;
-  --surface-soft: #eeeee5;
-  --line: #cbd3ca;
-  --dark: #0b211a;
+  --ink: #20362c;
+  --muted: #4e6258;
+  --paper: #f3edda;
+  --surface: #fffaf0;
+  --surface-soft: #ebe5d2;
+  --line: #9da99a;
+  --dark: #17372c;
   --accent: #2c765d;
   --accent-soft: #d9eee5;
   --accent-ink: #124a38;
-  --warning: #7a4b12;
-  --warning-soft: #fff0cf;
-  --radius: 1.1rem;
-  --shadow: 0 1rem 3rem rgb(17 42 32 / 8%);
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --warning: #5f4712;
+  --warning-soft: #fff2ad;
+  --yellow: #f4d66d;
+  --radius: .45rem;
+  --shadow: .45rem .45rem 0 rgb(32 54 44 / 16%);
+  font-family: "Trebuchet MS", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 .theme-biolume {
@@ -51,7 +52,10 @@ html {
 
 body {
   margin: 0;
-  background: var(--paper);
+  background:
+    linear-gradient(90deg, transparent 4.2rem, rgb(237 126 115 / 22%) 4.2rem, rgb(237 126 115 / 22%) 4.3rem, transparent 4.3rem),
+    repeating-linear-gradient(0deg, transparent, transparent 31px, rgb(70 112 91 / 9%) 31px, rgb(70 112 91 / 9%) 32px),
+    var(--paper);
   color: var(--ink);
   line-height: 1.68;
 }
@@ -97,7 +101,8 @@ a:focus-visible {
   justify-content: space-between;
   gap: 1rem;
   padding: 1.3rem 0;
-  font-size: .82rem;
+  font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", monospace;
+  font-size: .78rem;
   font-weight: 750;
 }
 
@@ -106,6 +111,12 @@ a:focus-visible {
   align-items: center;
   gap: .4rem;
   text-decoration: none;
+  text-decoration-thickness: 2px;
+  text-underline-offset: .3rem;
+}
+
+.proposal-nav a:hover {
+  text-decoration: underline;
 }
 
 .status-pill,
@@ -114,14 +125,21 @@ a:focus-visible {
   align-items: center;
   width: fit-content;
   padding: .35rem .62rem;
-  border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--line));
-  border-radius: 999px;
+  border: 1.5px solid var(--ink);
+  border-radius: .2rem;
   background: var(--accent-soft);
   color: var(--accent-ink);
-  font-size: .68rem;
+  font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", monospace;
+  font-size: .65rem;
   font-weight: 800;
   letter-spacing: .08em;
-  text-transform: uppercase;
+  text-transform: lowercase;
+}
+
+.status-pill {
+  background: var(--yellow);
+  box-shadow: 3px 3px 0 var(--ink);
+  transform: rotate(1deg);
 }
 
 .proposal-hero {
@@ -130,17 +148,26 @@ a:focus-visible {
   gap: 3rem;
   align-items: center;
   padding: 5rem 0 4rem;
-  border-top: 1px solid var(--line);
+  border-top: 1px dashed var(--line);
 }
 
 .eyebrow,
 .section-kicker {
   margin: 0 0 .75rem;
   color: var(--accent-ink);
-  font-size: .72rem;
+  font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", monospace;
+  font-size: .7rem;
   font-weight: 850;
   letter-spacing: .13em;
-  text-transform: uppercase;
+  text-transform: lowercase;
+}
+
+.eyebrow {
+  display: inline-block;
+  padding: .18rem .5rem;
+  background: var(--yellow);
+  color: var(--ink);
+  transform: rotate(-.6deg);
 }
 
 h1,
@@ -186,18 +213,19 @@ h1 {
   padding: 2rem;
   place-items: center;
   overflow: hidden;
-  border: 1px solid color-mix(in srgb, var(--accent) 28%, var(--line));
-  border-radius: 50% 46% 48% 52%;
+  border: 2px dashed var(--accent-ink);
+  border-radius: 47% 53% 45% 55%;
   background:
     radial-gradient(circle at center, var(--surface) 0 24%, transparent 25%),
     radial-gradient(circle at center, var(--accent-soft) 0 56%, transparent 57%);
-  box-shadow: var(--shadow);
+  box-shadow: .75rem .75rem 0 rgb(32 54 44 / 10%);
+  transform: rotate(1deg);
 }
 
 .system-diagram::before,
 .system-diagram::after {
   position: absolute;
-  border: 1px solid color-mix(in srgb, var(--accent) 42%, transparent);
+  border: 1px dashed color-mix(in srgb, var(--accent) 48%, transparent);
   border-radius: 50%;
   content: "";
 }
@@ -220,9 +248,10 @@ h1 {
   aspect-ratio: 1;
   place-items: center;
   padding: 1rem;
-  border: 1px solid var(--accent);
-  border-radius: 50%;
-  background: var(--surface);
+  border: 2px solid var(--ink);
+  border-radius: 45% 55% 48% 52%;
+  background: var(--accent-soft);
+  box-shadow: 4px 4px 0 var(--ink);
   color: var(--accent-ink);
   font-family: Georgia, serif;
   font-size: 1.2rem;
@@ -234,11 +263,12 @@ h1 {
   z-index: 3;
   max-width: 9.5rem;
   padding: .5rem .7rem;
-  border: 1px solid color-mix(in srgb, var(--accent) 35%, var(--line));
-  border-radius: .7rem;
+  border: 1.5px solid var(--ink);
+  border-radius: .2rem;
   background: rgb(255 253 248 / 92%);
   color: var(--ink);
-  font-size: .72rem;
+  font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", monospace;
+  font-size: .68rem;
   font-weight: 750;
   line-height: 1.25;
   text-align: center;
@@ -255,7 +285,8 @@ h1 {
   bottom: .45rem;
   left: 1.5rem;
   color: var(--muted);
-  font-size: .66rem;
+  font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", monospace;
+  font-size: .62rem;
   text-align: center;
 }
 
@@ -265,9 +296,11 @@ h1 {
   gap: 2rem;
   align-items: center;
   padding: 1.4rem 1.6rem;
-  border: 1px solid #e0c792;
+  border: 2px dashed var(--ink);
   border-radius: var(--radius);
   background: var(--warning-soft);
+  box-shadow: var(--shadow);
+  transform: rotate(-.25deg);
 }
 
 .disclosure strong {
@@ -285,7 +318,7 @@ h1 {
 
 .proposal-section {
   padding: 5.5rem 0;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px dashed var(--line);
 }
 
 .section-heading {
@@ -320,9 +353,22 @@ h1 {
 .mechanism-card,
 .control-card {
   padding: 1.4rem;
-  border: 1px solid var(--line);
+  border: 2px solid var(--ink);
   border-radius: var(--radius);
   background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.boundary-card:nth-child(odd),
+.mechanism-card:nth-child(even),
+.control-card:nth-child(odd) {
+  transform: rotate(-.15deg);
+}
+
+.boundary-card:nth-child(even),
+.mechanism-card:nth-child(odd),
+.control-card:nth-child(even) {
+  transform: rotate(.15deg);
 }
 
 .boundary-card {
@@ -333,10 +379,11 @@ h1 {
 .mechanism-card span,
 .control-card span {
   color: var(--accent-ink);
-  font-size: .68rem;
+  font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", monospace;
+  font-size: .66rem;
   font-weight: 850;
   letter-spacing: .1em;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 .boundary-card h3,
@@ -380,9 +427,10 @@ h1 {
 
 .metrics-wrap {
   overflow-x: auto;
-  border: 1px solid var(--line);
+  border: 2px solid var(--ink);
   border-radius: var(--radius);
   background: var(--surface);
+  box-shadow: var(--shadow);
 }
 
 .metrics {
@@ -394,7 +442,7 @@ h1 {
 .metrics th,
 .metrics td {
   padding: 1rem;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px dashed var(--line);
   text-align: left;
   vertical-align: top;
 }
@@ -406,9 +454,10 @@ h1 {
 .metrics th {
   background: var(--surface-soft);
   color: var(--accent-ink);
-  font-size: .66rem;
+  font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", monospace;
+  font-size: .64rem;
   letter-spacing: .08em;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 .metrics td:first-child {
@@ -423,13 +472,13 @@ h1 {
   grid-template-columns: repeat(3, 1fr);
   list-style: none;
   counter-reset: phase;
-  border-top: 1px solid var(--line);
+  border-top: 2px dashed var(--line);
 }
 
 .roadmap li {
   min-height: 220px;
   padding: 1.3rem 1.1rem;
-  border-right: 1px solid var(--line);
+  border-right: 1px dashed var(--line);
   counter-increment: phase;
 }
 
@@ -440,7 +489,8 @@ h1 {
 .roadmap li::before {
   color: var(--accent-ink);
   content: "0" counter(phase);
-  font-size: .68rem;
+  font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", monospace;
+  font-size: .66rem;
   font-weight: 850;
   letter-spacing: .08em;
 }
@@ -474,10 +524,14 @@ h1 {
 .source-note {
   margin-top: 1.5rem;
   padding: 1rem 1.2rem;
-  border-left: 3px solid var(--accent);
+  border: 1.5px dashed var(--accent-ink);
+  border-left: 4px solid var(--accent);
+  border-radius: .2rem;
   background: var(--accent-soft);
   color: var(--accent-ink);
-  font-size: .78rem;
+  font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", monospace;
+  font-size: .72rem;
+  transform: rotate(.15deg);
 }
 
 .proposal-footer {
@@ -486,7 +540,8 @@ h1 {
   gap: 2rem;
   padding: 2rem 0 3rem;
   color: var(--muted);
-  font-size: .76rem;
+  font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", monospace;
+  font-size: .72rem;
 }
 
 .proposal-footer p {
