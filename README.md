@@ -1,6 +1,6 @@
-# I make stupid shit biology wise that will not contribute to anything in life but they're cool i guess.
+# BIOFOLIO
 
-helloooooo welcome to my space!
+hello i make stupid shit biology wise that will not contribute to anything in life but theyre fun to make.
 you can call me Pinteritte. im 15 and i live in Poland
 all of the projects below are made with the goal of being as scientific and accurate as possible
 well constructed criticism and feedback are always welcome. you can contact me by pinging me @vxef on Biocord or by DMing me. response times may vary
