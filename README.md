@@ -24,7 +24,7 @@ well constructed criticism and feedback are always welcome. you can contact me b
 * **Core Concepts:** Reef-safe scaffold architecture, coral larval settlement cues, microhabitat stabilization, modular nursery deployment, and long-term ecological monitoring.
 * **Status:** Done.
 
-### 4. [Project BioLume Sentinel](https://github.com/pinterittejeden-gif/Project-BioLume-Sentinel)
+### 4. [Project BioLume Sentinel](https://pinterittejeden-gif.github.io/Project-BioLume-Sentinel/)
 * **Focus:** Living Plant Biosensors for Soil Contamination
 * **Core Concepts:** Pollutant-responsive promoter systems, bioluminescent reporter output, root-zone sensing, false-positive control, optical readout calibration, and contained phytosensor deployment.
 * **Status:** Done.
