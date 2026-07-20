@@ -1,53 +1,33 @@
 # BIOFOLIO
 
-hello i make stupid shit biology wise that will not contribute to anything in life but theyre fun to make.
-you can call me Pinteritte. im 15 and i live in Poland
-all of the projects below are made with the goal of being as scientific and accurate as possible
-well constructed criticism and feedback are always welcome. you can contact me by pinging me @vxef on Biocord or by DMing me. response times may vary
+BIOFOLIO is Pinteritte's portfolio of conceptual research proposals spanning synthetic biology, biomaterials, ecological restoration, and environmental monitoring.
 
----
+**Portfolio:** [pinterittejeden-gif.github.io/pinterittejeden-gif](https://pinterittejeden-gif.github.io/pinterittejeden-gif/)
 
-## 🔬 Active Projects & Research
+## Projects
 
-### 1. [Project Titan-Mycelium](https://pinterittejeden-gif.github.io/titan-mycelium/)
-* **Focus:** Engineered Fungal Matrices for Autonomous Structural Repair and Vector Defense
-* **Core Concepts:** Filamentous mycelial networks, localized chitinase response, self-repairing biomaterials, and reproductive containment.
-* **Status:** Done.
+| Project | Research question | Status |
+| --- | --- | --- |
+| [BioLume Sentinel](https://pinterittejeden-gif.github.io/Project-BioLume-Sentinel/) | Could a contained plant reporter help identify where confirmatory soil testing should happen? | Concept proposal |
+| [Coral-Suture](https://pinterittejeden-gif.github.io/coral-suture/) | Could a retrievable mineral scaffold improve coral larval settlement and early survival? | Concept proposal |
+| [Metallophyte-Armor](https://pinterittejeden-gif.github.io/metallophyte-armor/) | Could copper already present in contaminated soil be captured in monitored, harvestable timber? | Concept proposal |
+| [Titan-Mycelium](https://pinterittejeden-gif.github.io/titan-mycelium/) | Could a nutrient-dependent fungal matrix provide localized, non-structural repair? | Concept proposal |
 
-### 2. [Project Metallophyte-Armor](https://pinterittejeden-gif.github.io/metallophyte-armor/)
-* **Focus:** Genetic Biomineralization in Silvo-Architecture
-* **Core Concepts:** Engineered pine heartwood transition targeting, copper ion buffering, biomineralized inner timber, passive antifungal resistance, insect deterrence, and lifecycle risk mitigation.
-* **Status:** Done.
+## Evidence standard
 
-### 3. [Project Coral-Suture](https://pinterittejeden-gif.github.io/coral-suture/)
-* **Focus:** Engineered Recruitment Scaffolds for Reef Restoration
-* **Core Concepts:** Reef-safe scaffold architecture, coral larval settlement cues, microhabitat stabilization, modular nursery deployment, and long-term ecological monitoring.
-* **Status:** Done.
+Each proposal separates:
 
-### 4. [Project BioLume Sentinel](https://pinterittejeden-gif.github.io/Project-BioLume-Sentinel/)
-* **Focus:** Living Plant Biosensors for Soil Contamination
-* **Core Concepts:** Pollutant-responsive promoter systems, bioluminescent reporter output, root-zone sensing, false-positive control, optical readout calibration, and contained phytosensor deployment.
-* **Status:** Done.
+1. **Established basis** — mechanisms or practices supported by cited literature.
+2. **Proposed bridge** — the speculative engineering step connecting those mechanisms.
+3. **Critical unknowns** — the assumptions most likely to prevent the system from working.
+4. **Minimum proof** — measurable tests required before stronger claims would be justified.
 
----
+These projects are educational design studies. They have not been physically implemented or validated by the author and should not be read as experimental results, deployment instructions, or safety guidance.
 
-## About These Projects
+## Feedback
 
-The projects presented in this portfolio are **conceptual research proposals** and **speculative engineering designs** created to explore ideas in biotechnology, synthetic biology, biomaterials, environmental design, ecological restoration, and environmental monitoring.
+Constructive scientific and technical criticism is welcome through [GitHub issues](https://github.com/pinterittejeden-gif/pinterittejeden-gif/issues).
 
-They are **not** experimental studies, have **not** been physically implemented or tested by me, and should **not** be interpreted as validated scientific results. Performance descriptions, diagrams, images, and figures are intended to illustrate proposed concepts rather than report measured data.
+## License
 
----
-
-## 🛠️ Technical Domains
-
-* **Synthetic Biology & Biomaterials:** Genetic pathway modifications, engineered living materials, metabolic design, and biological containment concepts.
-* **Environmental Biotechnology:** Phytoremediation, metal sequestration, soil-to-plant transport systems, biological remediation mechanics, and contamination sensing.
-* **Marine Restoration & Ecology:** Coral recruitment, reef-safe scaffold design, larval settlement support, and ecological monitoring.
-* **Plant Biosensors & Environmental Monitoring:** Reporter plants, root-zone sensing, bioluminescent outputs, optical readout systems, and contamination mapping.
-* **Material Science:** Mycelium composites, biomineralized timber, reef-compatible scaffolds, structural reinforcement concepts, and degradation resistance.
-* **Automation & Simulation:** Scripted modeling of biological feedback loops and hypothetical response pathways.
-
----
-
-*Maintained by Pinteritte (me).*
+The website code is available under the MIT License. Original written content and code-native diagrams are available under CC BY 4.0. See [LICENSE.md](LICENSE.md) for details.
