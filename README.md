@@ -1,6 +1,6 @@
 # Pinteritte / living systems notes
 
-This is the index for four speculative biology notebooks. I use them to work through ideas involving plants, fungi, biomaterials, and environmental sensing—sources, unsupported jumps, failure cases, and all.
+This is the index for four speculative biology notebooks. I use them to work through ideas involving plants, fungi, biomaterials, and environmental sensing - sources, unsupported jumps, failure cases, and all.
 
 [Open the project index](https://pinterittejeden-gif.github.io/pinterittejeden-gif/)
 
