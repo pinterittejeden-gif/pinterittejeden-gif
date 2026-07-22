@@ -1,31 +1,22 @@
-# hey, i'm Pinteritte
+# Pinteritte / living systems notes
 
-i make weird biology ideas because they're fun to think through. mostly plants, fungi, biomaterials, and ecosystems - the kind of stuff where living systems run into engineering problems.
+This is the index for four speculative biology notebooks. I use them to work through ideas involving plants, fungi, biomaterials, and environmental sensing—sources, unsupported jumps, failure cases, and all.
 
-i try to take every idea seriously enough to find out where it breaks.
+[Open the project index](https://pinterittejeden-gif.github.io/pinterittejeden-gif/)
 
-**my actual site:** [pinterittejeden-gif.github.io/pinterittejeden-gif](https://pinterittejeden-gif.github.io/pinterittejeden-gif/)
+## Current notebooks
 
-## things i'm overthinking
-
-| project | the question that started it |
+| Notebook | Subject |
 | --- | --- |
-| [BioLume Sentinel](https://pinterittejeden-gif.github.io/Project-BioLume-Sentinel/) | could a plant glow when its roots encounter contaminated soil? |
-| [Coral-Suture](https://pinterittejeden-gif.github.io/coral-suture/) | could a removable scaffold give coral larvae a better place to start? |
-| [Metallophyte-Armor](https://pinterittejeden-gif.github.io/metallophyte-armor/) | could a pine move copper from bad soil into harvestable inner wood? |
-| [Titan-Mycelium](https://pinterittejeden-gif.github.io/titan-mycelium/) | could a limited fungal matrix wake up near damage, repair it, and stop? |
+| [BioLume Sentinel](https://pinterittejeden-gif.github.io/Project-BioLume-Sentinel/) | A contained reporter plant for flagging where proper soil analysis should happen next |
+| [Coral-Suture](https://pinterittejeden-gif.github.io/coral-suture/) | A removable settlement scaffold for early coral recruitment |
+| [Metallophyte-Armor](https://pinterittejeden-gif.github.io/metallophyte-armor/) | Copper uptake, transport, capture, and recovery in pine tissue |
+| [Titan-Mycelium](https://pinterittejeden-gif.github.io/titan-mycelium/) | A finite fungal growth pulse inside a replaceable material coupon |
 
-## quick honesty check
+## How I write these
 
-i haven't physically built or validated these projects. they're conceptual proposals built from published mechanisms, not experimental results or instructions.
+Every notebook keeps four things separate: source material, my proposal, the result that would stop the project, and the smallest useful next test.
 
-for each idea, i try to separate:
+These are design studies, not experimental results or deployment instructions. If you find a bad assumption or a paper I missed, [open an issue](https://github.com/pinterittejeden-gif/pinterittejeden-gif/issues).
 
-1. what the science already supports;
-2. the leap i'm making;
-3. what could kill the idea;
-4. what i'd test first.
-
-if you find a broken assumption, a paper i missed, or a much simpler answer, [tell me](https://github.com/pinterittejeden-gif/pinterittejeden-gif/issues). well-constructed criticism is always welcome.
-
-code is MIT licensed; original writing and diagrams are CC BY 4.0. the details are in [LICENSE.md](LICENSE.md).
+Code is MIT licensed. Original writing and diagrams are CC BY 4.0; see [LICENSE.md](LICENSE.md).
