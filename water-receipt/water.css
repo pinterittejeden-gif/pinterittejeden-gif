@@ -1,0 +1,105 @@
+.theme-water {
+  --accent: #35666a;
+  --accent-soft: #deebea;
+  --accent-ink: #244f53;
+  --note: #eee8d2;
+  --note-ink: #5a4d25;
+}
+
+.photo-notes--single {
+  grid-template-columns: 1fr;
+}
+
+.photo-notes--single .photo-note {
+  display: grid;
+  grid-template-columns: minmax(280px, .85fr) minmax(0, 1.15fr);
+}
+
+.photo-notes--single .photo-note img {
+  height: 36rem;
+  border-right: 1px solid var(--line);
+  border-bottom: 0;
+  object-position: 53% 55%;
+}
+
+.photo-notes--single .photo-note figcaption {
+  align-content: end;
+  padding: clamp(1.5rem, 4vw, 3.5rem);
+}
+
+.photo-notes--single .photo-note figcaption strong {
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  line-height: 1.15;
+}
+
+.pulse-demo {
+  margin: 2rem 0;
+  padding: 1.5rem 1.5rem 1rem;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.pulse-labels {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--muted);
+  font: 700 .76rem/1.3 var(--sans);
+}
+
+.pulse-line {
+  position: relative;
+  height: 5rem;
+  margin: .3rem .55rem 0;
+}
+
+.pulse-line::before {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  height: 2px;
+  background: var(--ink);
+  content: "";
+}
+
+.sample-dot {
+  position: absolute;
+  z-index: 2;
+  top: calc(50% - .55rem);
+  width: 1.1rem;
+  height: 1.1rem;
+  border: 3px solid var(--surface);
+  border-radius: 50%;
+  background: var(--ink);
+  box-shadow: 0 0 0 1px var(--ink);
+}
+
+.sample-dot--a { left: 1%; }
+.sample-dot--b { right: 1%; }
+
+.pollution-pulse {
+  position: absolute;
+  z-index: 1;
+  top: .65rem;
+  bottom: .65rem;
+  left: 47%;
+  width: 6%;
+  min-width: 2.5rem;
+  border: 1px solid #a6642c;
+  background: #d6914f;
+  transform: skew(-8deg);
+}
+
+.pulse-demo p {
+  margin: 0;
+  color: var(--muted);
+  font: .9rem var(--sans);
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .photo-notes--single .photo-note { display: block; }
+  .photo-notes--single .photo-note img { height: min(30rem, 110vw); border-right: 0; border-bottom: 1px solid var(--line); }
+  .pulse-labels span:nth-child(2) { text-align: center; }
+}

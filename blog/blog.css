@@ -1,0 +1,199 @@
+.article-shell {
+  width: min(1120px, calc(100% - 40px));
+  margin-inline: auto;
+}
+
+.article-header {
+  max-width: 900px;
+  padding: 6.5rem 0 4.5rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 4rem;
+  color: var(--muted);
+  font-size: .78rem;
+}
+
+.article-header h1 {
+  max-width: 850px;
+  margin: 0;
+  font: 400 clamp(3.7rem, 8vw, 7rem)/.93 var(--serif);
+  letter-spacing: -.055em;
+}
+
+.article-dek {
+  max-width: 720px;
+  margin: 1.8rem 0 0;
+  color: var(--muted);
+  font: 400 clamp(1.15rem, 2vw, 1.4rem)/1.55 var(--serif);
+}
+
+.article-meta {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  color: var(--muted);
+  font: .78rem var(--sans);
+}
+
+.article-meta span + span::before {
+  content: "";
+}
+
+.article-figure {
+  margin: 0;
+  padding-bottom: 5.5rem;
+}
+
+.article-image-strip {
+  display: grid;
+  height: auto;
+  grid-template-columns: 1fr 1.2fr 1.4fr;
+  grid-template-rows: minmax(0, 1fr);
+  gap: 4px;
+  overflow: hidden;
+  padding: 4px;
+  background: var(--ink);
+}
+
+.article-image-strip img {
+  display: block;
+  width: 100%;
+  height: 430px;
+  min-width: 0;
+  min-height: 430px;
+  max-height: 430px;
+  object-fit: cover;
+  filter: saturate(.78) contrast(.96);
+}
+
+.article-image-strip img:first-child { object-position: 48% center; }
+.article-image-strip img:nth-child(2) { object-position: 48% 38%; }
+
+.article-figure figcaption {
+  margin-top: .65rem;
+  color: var(--muted);
+  font: italic .85rem var(--serif);
+}
+
+.article-body {
+  position: relative;
+  width: min(720px, 100%);
+  margin: 0 auto;
+  font: 400 1.08rem/1.8 var(--serif);
+}
+
+.article-body .standfirst {
+  margin: 0 0 2rem;
+  color: var(--ink);
+  font-size: 1.45rem;
+  line-height: 1.55;
+}
+
+.article-body p {
+  margin: 0 0 1.5rem;
+}
+
+.article-body h2 {
+  margin: 4.3rem 0 1.2rem;
+  font: 400 clamp(2.1rem, 4vw, 3.15rem)/1.05 var(--serif);
+  letter-spacing: -.035em;
+}
+
+.article-body ul {
+  margin: 1.2rem 0 2rem;
+  padding: 1.4rem 1.5rem 1.4rem 3rem;
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  background: rgb(249 246 238 / 55%);
+}
+
+.article-body li { margin: .4rem 0; }
+
+.article-body blockquote {
+  margin: 3.2rem -4.5rem;
+  padding: 2.5rem 4.5rem;
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  color: var(--accent-dark);
+  background: #eee1aa;
+}
+
+.article-body blockquote p {
+  margin: 0;
+  font-size: clamp(1.55rem, 3vw, 2.2rem);
+  line-height: 1.35;
+}
+
+.margin-note {
+  position: absolute;
+  top: 31rem;
+  left: calc(100% + 4rem);
+  width: 210px;
+  padding-top: .8rem;
+  border-top: 1px solid var(--ink);
+  transform: rotate(1deg);
+}
+
+.margin-note span {
+  display: block;
+  margin-bottom: .5rem;
+  color: var(--accent);
+  font: 700 .63rem var(--mono);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.margin-note strong {
+  font: italic 1rem/1.5 var(--serif);
+}
+
+.article-footer {
+  display: flex;
+  width: min(900px, 100%);
+  min-height: 200px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 5.5rem auto 0;
+  border-top: 1px solid var(--ink);
+}
+
+.article-footer p {
+  margin: 0;
+  color: var(--muted);
+  font: italic 1rem var(--serif);
+}
+
+.site-footer {
+  width: min(1120px, calc(100% - 40px));
+  margin-inline: auto;
+}
+
+@media (max-width: 1080px) {
+  .margin-note {
+    position: static;
+    width: min(380px, 100%);
+    margin: 2.6rem 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .article-shell,
+  .site-footer { width: min(100% - 28px, 1120px); }
+  .article-header { padding: 4.5rem 0 3.5rem; }
+  .back-link { margin-bottom: 3rem; }
+  .article-image-strip { grid-template-columns: .85fr 1.15fr; }
+  .article-image-strip img { height: 300px; min-height: 300px; max-height: 300px; }
+  .article-image-strip img:last-child { display: none; }
+  .article-figure { padding-bottom: 4rem; }
+  .article-body blockquote { margin: 3rem 0; padding: 2rem 1.5rem; }
+  .article-footer { align-items: flex-start; flex-direction: column; justify-content: center; }
+}
+
+@media (max-width: 440px) {
+  .article-header h1 { font-size: 3.55rem; }
+  .article-meta { align-items: flex-start; flex-direction: column; gap: .45rem; }
+  .article-meta span + span::before { display: none; }
+}

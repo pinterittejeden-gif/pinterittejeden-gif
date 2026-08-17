@@ -52,18 +52,6 @@ h1, h2, h3, p, li { text-wrap: pretty; }
 }
 .proposal-nav a { font-weight: 700; text-decoration: none; }
 .proposal-nav a:hover { text-decoration: underline; }
-.status-pill,
-.tag {
-  display: inline-flex;
-  width: fit-content;
-  align-items: center;
-  padding: .25rem .5rem;
-  border: 1px solid var(--line);
-  color: var(--accent-ink);
-  background: var(--surface);
-  font: 700 .68rem/1.3 var(--mono);
-}
-.status-pill { color: var(--ink); background: var(--accent-soft); }
 
 .proposal-hero {
   display: grid;
@@ -75,16 +63,13 @@ h1, h2, h3, p, li { text-wrap: pretty; }
 .eyebrow,
 .section-kicker {
   margin: 0 0 .7rem;
-  color: var(--accent-ink);
-  font: 700 .72rem/1.3 var(--mono);
-  letter-spacing: .07em;
-  text-transform: uppercase;
+  color: var(--muted);
+  font: 700 .8rem/1.3 var(--sans);
 }
 h1,
 h2 { font-family: var(--serif); font-weight: 400; letter-spacing: -.025em; }
 h1 { max-width: 700px; margin: 0; font-size: clamp(3rem, 7vw, 4.8rem); line-height: 1.02; }
 .proposal-dek { max-width: 680px; margin: 1.4rem 0 0; color: var(--muted); font-size: 1.06rem; }
-.proposal-meta { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: 1.4rem; }
 
 .system-diagram {
   display: grid;
@@ -198,10 +183,8 @@ h1 { max-width: 700px; margin: 0; font-size: clamp(3rem, 7vw, 4.8rem); line-heig
 .boundary-card span,
 .mechanism-card span,
 .control-card span {
-  color: var(--accent-ink);
-  font: 700 .68rem/1.3 var(--mono);
-  letter-spacing: .05em;
-  text-transform: uppercase;
+  color: var(--muted);
+  font: 700 .78rem/1.3 var(--sans);
 }
 .boundary-card h3,
 .mechanism-card h3,
@@ -237,7 +220,7 @@ h1 { max-width: 700px; margin: 0; font-size: clamp(3rem, 7vw, 4.8rem); line-heig
   border-bottom: 1px solid var(--line);
   counter-increment: phase;
 }
-.roadmap li::before { color: var(--accent-ink); content: "0" counter(phase); font: 700 .7rem/1.6 var(--mono); }
+.roadmap li::before { color: var(--muted); content: counter(phase) "."; font: 700 .85rem/1.6 var(--sans); }
 .roadmap h3 { margin: 0; font: 400 1.12rem/1.3 var(--serif); }
 .roadmap p { margin: 0; color: var(--muted); font-size: .84rem; }
 
@@ -284,7 +267,6 @@ h1 { max-width: 700px; margin: 0; font-size: clamp(3rem, 7vw, 4.8rem); line-heig
 
 @media (max-width: 520px) {
   .proposal-shell { width: calc(100% - 24px); }
-  .proposal-nav .status-pill { display: none; }
   h1 { font-size: clamp(2.55rem, 13vw, 3.6rem); }
   .visual-notes,
   .proposal-section { padding: 4rem 0; }
