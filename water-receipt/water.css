@@ -1,9 +1,9 @@
 .theme-water {
-  --accent: #35666a;
-  --accent-soft: #deebea;
-  --accent-ink: #244f53;
-  --note: #eee8d2;
-  --note-ink: #5a4d25;
+  --accent: #7fa8aa;
+  --accent-soft: #1b2526;
+  --accent-ink: #a6c6c8;
+  --note: #22261f;
+  --note-ink: #c2c6b4;
 }
 
 .photo-notes--single {
@@ -86,8 +86,8 @@
   left: 47%;
   width: 6%;
   min-width: 2.5rem;
-  border: 1px solid #a6642c;
-  background: #d6914f;
+  border: 1px solid #8a5a2e;
+  background: #b9793c;
   transform: skew(-8deg);
 }
 

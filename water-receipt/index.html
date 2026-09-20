@@ -5,25 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Water Receipt - Separate capsules for missed pollution events</title>
   <meta name="description" content="An idea for a retrievable water sampler with separate capsules that record short chemical exposures as permanent changes in DNA.">
-  <meta name="theme-color" content="#f5f3ed">
+  <meta name="theme-color" content="#0e1012">
   <meta property="og:title" content="Water Receipt">
   <meta property="og:description" content="A passive sampler with separate capsules for different pollutants, checked after retrieval.">
   <meta property="og:type" content="article">
-  <link rel="stylesheet" href="../research.css?v=4">
-  <link rel="stylesheet" href="water.css?v=2">
+  <link rel="stylesheet" href="../research.css?v=5">
+  <link rel="stylesheet" href="water.css?v=3">
 </head>
 <body class="theme-water">
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="proposal-shell">
     <nav class="proposal-nav" aria-label="Notebook navigation">
-      <a href="../#environmental-monitoring">← project index</a>
+      <a href="../#environmental-monitoring">project index</a>
     </nav>
 
     <main id="main">
       <header class="proposal-hero">
         <div>
           <h1>Water Receipt</h1>
-          <p class="proposal-dek">A sealed holder sits in flowing water with separate capsules for different chemicals. Each capsule keeps a permanent DNA record if its target passes by, and the whole thing is collected later. Basically a receipt for whatever the Tuesday sample missed.</p>
+          <p class="proposal-dek">A sealed holder sits in flowing water with separate capsules for different chemicals. Each capsule keeps a permanent DNA record if its target passes by, and the whole thing is collected later. It records a short chemical exposure that routine sampling would miss.</p>
         </div>
 
         <div class="system-diagram" role="img" aria-label="Water reaches separate chemical-sensing capsules, one capsule records its target in DNA, and the holder is collected and checked later">
@@ -53,14 +53,14 @@
         <div class="pulse-demo" role="img" aria-label="A timeline shows one short pollution pulse between two ordinary water sampling times">
           <div class="pulse-labels"><span>Monday sample</span><span>brief discharge</span><span>Thursday sample</span></div>
           <div class="pulse-line"><span class="sample-dot sample-dot--a"></span><span class="pollution-pulse"></span><span class="sample-dot sample-dot--b"></span></div>
-          <p>Both bottles miss it. The capsules should not.</p>
+          <p>Both bottles miss the discharge.</p>
         </div>
 
         <div class="photo-notes photo-notes--single">
           <figure class="photo-note">
             <img src="images/wastewater-sampling.jpg" width="1400" height="2104" loading="lazy" decoding="async" alt="A wastewater worker collects a water sample into a bucket at a treatment plant">
             <figcaption>
-              <strong>Actual wastewater sampling, which still involves a person, a bottle, and unfortunate water.</strong>
+              <strong>Wastewater sampling, which still involves a person and a bottle.</strong>
               <span>The proposed cartridge would not replace proper sampling. It would flag that something worth investigating passed through between visits.</span>
               <small class="photo-credit">Photo by Senior Airman Seleena Muhammad-Ali, U.S. Air Force, public domain. <a href="https://commons.wikimedia.org/wiki/File:The_flow_of_operations_at_Lakenheath%E2%80%99s_wastewater_treatment_plant_(8529228).jpg">Wikimedia Commons</a>.</small>
             </figcaption>
@@ -95,7 +95,7 @@
           </article>
           <article class="boundary-card">
             <span>likely failure</span>
-            <h3>Wastewater eats the clever part</h3>
+            <h3>Wastewater may disrupt the reaction</h3>
             <p>Temperature swings, enzymes, particles, pH, biofilms, and chemical mixtures may destroy the reaction, block diffusion, or switch it on when the target was never there.</p>
           </article>
         </div>
@@ -113,13 +113,13 @@
         <div class="mechanism-grid">
           <article class="mechanism-card">
             <span>Outer case</span>
-            <h3>A boring object that can be recovered</h3>
-            <p>A labelled cage attaches to a drain or flow channel, protects the capsules from debris, and opens without losing them. If retrieval is annoying, nobody will use it twice.</p>
+            <h3>A recoverable outer case</h3>
+            <p>A labelled cage attaches to a drain or flow channel, protects the capsules from debris, and opens without losing them. Retrieval has to be simple or it will not be repeated.</p>
           </article>
           <article class="mechanism-card">
             <span>Water window</span>
-            <h3>A membrane between the sewage and the reaction</h3>
-            <p>Each capsule has a membrane that must let its dissolved target diffuse in while retaining DNA, enzymes, and the support material. Several pore sizes and protective layers would need testing because wastewater does enjoy clogging things.</p>
+            <h3>A membrane between the water and the reaction</h3>
+            <p>Each capsule has a membrane that must let its dissolved target diffuse in while retaining DNA, enzymes, and the support material. Several pore sizes and protective layers would need testing because wastewater fouls membranes.</p>
           </article>
           <article class="mechanism-card">
             <span>Separate capsules</span>
@@ -129,7 +129,7 @@
           <article class="mechanism-card">
             <span>Collection</span>
             <h3>Open it later and check which DNA changed</h3>
-            <p>The first lab version can use PCR to compare changed and unchanged DNA in every capsule. The point is a reliable historical answer, not a glowing screen on a sewer pipe.</p>
+            <p>The first lab version can use PCR to compare changed and unchanged DNA in every capsule. The result is read after collection, not in the field.</p>
           </article>
         </div>
       </section>
@@ -138,7 +138,7 @@
         <div class="section-heading">
           <div>
             <p class="section-kicker">first test</p>
-            <h2 id="metrics-title">Give it one short pulse and six long days</h2>
+            <h2 id="metrics-title">A short pulse, then a week of exposure</h2>
           </div>
           <p>A seven-day flow loop would compare clean water and raw wastewater. Some cartridges receive a thirty-minute target pulse on different days. Others never see the target or see a similar chemical instead.</p>
         </div>
@@ -151,7 +151,7 @@
               <tr><td>Short pulse</td><td>A thirty-minute exposure produces a clear record after retrieval days later.</td><td>The pulse is too brief to cross the membrane or activate the reaction.</td></tr>
               <tr><td>Timing</td><td>Pulses on day one and day six are both recovered reliably.</td><td>The device works only while freshly deployed.</td></tr>
               <tr><td>Dirty water</td><td>Raw wastewater reduces performance but leaves exposed and unexposed cartridges distinguishable.</td><td>Matrix effects erase the separation or destroy the controls.</td></tr>
-              <tr><td>Specificity</td><td>Related chemicals and ordinary pH changes do not produce the same record.</td><td>The sensor reports general misery instead of the target.</td></tr>
+              <tr><td>Specificity</td><td>Related chemicals and ordinary pH changes do not produce the same record.</td><td>The sensor responds to unrelated chemicals.</td></tr>
               <tr><td>Containment</td><td>DNA and reaction proteins remain below the validated detection limit outside the cartridge.</td><td>Reagents escape through the membrane or the housing breaks.</td></tr>
               <tr><td>Comparison</td><td>The cartridge catches events missed by scheduled grab samples and adds information beyond a cheap passive sorbent.</td><td>A simpler sampler answers the same question for less money and trouble.</td></tr>
             </tbody>
@@ -163,16 +163,16 @@
         <div class="section-heading">
           <div>
             <p class="section-kicker">controls</p>
-            <h2 id="controls-title">A remembered event still has to be real</h2>
+            <h2 id="controls-title">Controls separate a real exposure from an artifact</h2>
           </div>
-          <p>Every deployment needs enough internal controls to tell a true exposure from a dead reaction, a leaky circuit, a clogged membrane, or a cartridge that spent the week having a chemical breakdown.</p>
+          <p>Every deployment needs enough internal controls to tell a true exposure from a dead reaction, a leaky circuit, a clogged membrane, or a reaction that failed during the week.</p>
         </div>
 
         <div class="control-grid">
           <article class="control-card"><span>No-target capsule</span><h3>Measure false memories</h3><p>A matched capsule lacks the target sensor but contains the same reaction components. Any DNA change here is background, not pollution.</p></article>
           <article class="control-card"><span>Always-on capsule</span><h3>Prove the chemistry survived</h3><p>A separate reaction should complete regardless of the target. If it fails, silence from the sensing capsules means nothing.</p></article>
           <article class="control-card"><span>Flow marker</span><h3>Prove water reached the inside</h3><p>A harmless tracer or passive dye records wetting and approximate exchange through the membrane without being part of the DNA result.</p></article>
-          <article class="control-card"><span>Reference sampler</span><h3>Keep an ordinary method nearby</h3><p>Timed water samples and a conventional passive sampler provide independent measurements. The biological cartridge does not get to grade its own homework.</p></article>
+          <article class="control-card"><span>Reference sampler</span><h3>Keep an ordinary method nearby</h3>            <p>Timed water samples and a conventional passive sampler give an independent measurement to check the cartridge against.</p></article>
         </div>
       </section>
 
@@ -180,9 +180,9 @@
         <div class="section-heading">
           <div>
             <p class="section-kicker">first experiments</p>
-            <h2 id="roadmap-title">Start in a clean tube, end in ugly water</h2>
+            <h2 id="roadmap-title">From a clean tube to raw wastewater</h2>
           </div>
-          <p>The sequence separates memory chemistry, membrane transport, storage, and wastewater interference before pretending this belongs in a real drain.</p>
+          <p>The sequence separates memory chemistry, membrane transport, storage, and wastewater interference before any test in a real drain.</p>
         </div>
 
         <ol class="roadmap">
@@ -200,22 +200,22 @@
         <div class="section-heading">
           <div>
             <p class="section-kicker">sources</p>
-            <h2 id="references-title">What already works on paper</h2>
+            <h2 id="references-title">Published starting points</h2>
           </div>
           <p>These papers establish the memory circuit and the cell-free sensing pieces. None reports a continuously submerged, retrievable cell-free memory cartridge in wastewater.</p>
         </div>
 
         <ol class="references">
-          <li id="ref-1">Kalvapalle, P. B. et al. “Long-duration environmental biosensing by recording analyte detection in DNA using recombinase memory.” <em>Applied and Environmental Microbiology</em>, 2024. <a href="https://doi.org/10.1128/aem.02363-23" target="_blank" rel="noopener noreferrer">DOI</a></li>
-          <li id="ref-2">Jung, J. K. et al. “Cell-free biosensors for rapid detection of water contaminants.” <em>Nature Biotechnology</em>, 2020. <a href="https://doi.org/10.1038/s41587-020-0571-7" target="_blank" rel="noopener noreferrer">DOI</a></li>
-          <li id="ref-3">Chen, J., Borison, A., Densmore, D. &amp; Wong, W. W. “Cell-free recombinase-integrated Boolean output system.” <em>Cell Systems</em>, 2025. <a href="https://doi.org/10.1016/j.cels.2025.101395" target="_blank" rel="noopener noreferrer">DOI</a></li>
+          <li id="ref-1">Kalvapalle, P. B. et al. "Long-duration environmental biosensing by recording analyte detection in DNA using recombinase memory." <em>Applied and Environmental Microbiology</em>, 2024. <a href="https://doi.org/10.1128/aem.02363-23" target="_blank" rel="noopener noreferrer">DOI</a></li>
+          <li id="ref-2">Jung, J. K. et al. "Cell-free biosensors for rapid detection of water contaminants." <em>Nature Biotechnology</em>, 2020. <a href="https://doi.org/10.1038/s41587-020-0571-7" target="_blank" rel="noopener noreferrer">DOI</a></li>
+          <li id="ref-3">Chen, J., Borison, A., Densmore, D. &amp; Wong, W. W. "Cell-free recombinase-integrated Boolean output system." <em>Cell Systems</em>, 2025. <a href="https://doi.org/10.1016/j.cels.2025.101395" target="_blank" rel="noopener noreferrer">DOI</a></li>
         </ol>
         <p class="source-note">I have not done a patent search. The part I am exploring is a contained, wet, multi-day sampler with separate target capsules, tested against real wastewater and ordinary sampling.</p>
       </section>
     </main>
 
     <footer class="proposal-footer">
-      <div><a href="IMAGE_CREDITS.md">image credits</a><a href="../LICENSE.md">license</a><a href="#main">top ↑</a></div>
+      <div><a href="IMAGE_CREDITS.md">image credits</a><a href="../LICENSE.md">license</a><a href="#main">top</a></div>
     </footer>
   </div>
 </body>
