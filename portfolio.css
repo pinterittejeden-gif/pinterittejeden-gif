@@ -148,15 +148,11 @@ footer {
 .note-signoff { display: block; margin-top: 1.2rem; color: var(--note-ink); font: italic 1.2rem var(--serif); text-align: right; }
 
 .notice {
-  display: grid;
-  grid-template-columns: 170px minmax(0, 1fr);
-  gap: 2rem;
   max-width: 920px;
   padding: 1.6rem 0;
   border-top: 1px solid var(--rule);
   border-bottom: 1px solid var(--rule);
 }
-.notice .section-kicker { margin: .25rem 0 0; }
 .notice h2 { margin: 0 0 .45rem; font: 400 1.6rem/1.2 var(--serif); }
 .notice p:last-child { max-width: 650px; margin: 0; color: var(--muted); font-size: .95rem; }
 
@@ -309,9 +305,8 @@ footer div { display: flex; gap: 1rem; font-family: var(--mono); }
   .site-header nav { gap: .8rem; }
   .hero { padding: 4.5rem 0; }
   .hero h1 { font-size: clamp(3.05rem, 15vw, 4.5rem); }
-  .notice { grid-template-columns: 1fr; gap: .45rem; }
+  .notice { max-width: none; }
   .category-heading { grid-template-columns: 1fr; gap: .8rem; }
-  .notice .section-kicker { margin-bottom: .25rem; }
   .section { padding: 5rem 0; }
   .project-card,
   .project-card:nth-child(even) { display: block; }

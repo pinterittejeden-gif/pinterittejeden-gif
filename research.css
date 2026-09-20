@@ -35,8 +35,8 @@ h1, h2, h3, p, li { text-wrap: pretty; }
   left: 1rem;
   z-index: 100;
   padding: .65rem .85rem;
-  color: var(--paper);
-  background: var(--accent);
+  color: var(--surface);
+  background: var(--ink);
 }
 .skip-link:focus { top: 1rem; }
 .proposal-shell { width: min(980px, calc(100% - 40px)); margin-inline: auto; }
